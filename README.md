@@ -1,2 +1,71 @@
-# obsidian-assets
-This repository is a dedicated static assets store for my Obsidian-based personal knowledge system. This repository is a dedicated static assets store for my Obsidian-based personal knowledge system.  It is used to centrally manage and host images and other binary resources referenced by Markdown notes.
+# Obsidian Assets
+
+一个用于 **Obsidian 知识库的静态资源仓库**，用于集中存放并管理 Markdown 笔记中引用的图片及其他二进制资源。
+
+本仓库的目标是将**知识内容（Markdown）** 与 **资源文件（图片 / 附件 / 媒体）** 彻底解耦，从而获得更好的可维护性、可迁移性和长期稳定性。
+
+---
+
+## 仓库用途
+
+本仓库主要用于存放和托管以下类型的静态资源：
+
+* 笔记中使用的图片（架构图、流程图、示意图、截图等）
+* 附件类文件（PDF、PPT、参考资料等）
+* 其他被 Markdown 笔记引用的媒体资源
+
+这些资源通常通过 **GitHub Raw** 或 **CDN（如 jsDelivr）** 的方式被 Obsidian 或其他 Markdown 系统引用。
+
+---
+
+## 本仓库不包含的内容
+
+* ❌ Markdown 笔记正文
+* ❌ 知识体系结构或大纲
+* ❌ 博客、文档站点或发布系统
+* ❌ 任何可执行代码或程序逻辑
+
+如果你在寻找知识内容本身，它们应当存在于独立的 Obsidian Vault 或文档仓库中。
+
+---
+
+## 设计原则
+
+* **单一职责**：只存放静态资源，不混杂笔记或代码
+* **结构可预测**：目录按资源类型与领域划分，便于长期积累
+* **引用稳定**：资源路径尽量保持长期不变，避免破坏已有引用
+* **工具无关**：不依赖特定 Obsidian 插件或工作流
+* **自动化友好**：适合脚本化上传、整理与批量引用
+
+---
+
+## 使用方式（示例）
+
+在 Obsidian 或任意 Markdown 文档中，可通过 CDN 地址引用本仓库中的资源，例如：
+
+```md
+![](https://cdn.jsdelivr.net/gh/<username>/obsidian-assets/images/notes/ai/mcp-runtime-flow.png)
+```
+
+这种方式可以确保：
+
+* 多设备一致访问
+* 笔记仓库保持轻量
+* 资源可被外部文档、安全引用
+
+---
+
+## License
+
+本仓库采用 **Creative Commons Zero v1.0 Universal (CC0)** 协议发布。
+
+这意味着你可以自由地使用、修改、复制和分发本仓库中的内容，包括商业用途，且无需署名。
+
+> 尽管如此，如果你在公开场合使用了本仓库中的原创图表或素材，仍然非常欢迎保留出处说明。
+
+---
+
+## 其他说明
+
+* 本仓库中可能包含来源于第三方的素材，这类内容仍受其原始许可证约束
+* 目录结构和命名规范会随着长期使用逐步演进，但会尽量保持向后兼容
